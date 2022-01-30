@@ -8,9 +8,6 @@ class ButtonBoxDecorationHelper
   {
     return BoxDecoration(
       color:color,
-      // border: Border.all(
-      //     width: .0
-      // ),
       borderRadius: const BorderRadius.all(
           Radius.circular(25.0) //                 <--- border radius here
       ),

@@ -132,7 +132,7 @@ class StrikeThroughPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     canvas.drawRect(
         Rect.fromLTWH(0, (size.height / 2) - 2, size.width * percent, 2),
-        Paint()..color = Colors.green);
+        Paint()..color = ColorHelper.greenColor);
   }
 
   @override

@@ -8,6 +8,12 @@ class LoginPageController extends GetxController {
   TextEditingController passwordTC = TextEditingController();
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
+  final List locale =[
+    {'name':'ENGLISH','locale': const Locale('en','US')},
+    {'name':'తెలుగు','locale': const Locale('telugu','IN')},
+    {'name':'हिंदी','locale': const Locale('hindi','IN')},
+  ];
+
   @override
   void onInit() {
     // TODO: implement onInit
@@ -49,5 +55,10 @@ class LoginPageController extends GetxController {
   }
 
 
+  updateLanguage(Locale locale)
+  {
+    Get.back();
+    Get.updateLocale(locale);
+  }
 
 }

@@ -26,24 +26,12 @@ class _LoginPageState extends State<LoginPage>
   final LoginPageController loginPageController = Get.put(LoginPageController());
 
 
-  final List locale =[
-    {'name':'ENGLISH','locale': const Locale('en','US')},
-    {'name':'తెలుగు','locale': const Locale('telugu','IN')},
-    {'name':'हिंदी','locale': const Locale('hindi','IN')},
-  ];
-
-  updateLanguage(Locale locale)
-  {
-    Get.back();
-    Get.updateLocale(locale);
-  }
-
   buildLanguageDialog(BuildContext context)
   {
     showDialog(context: context,
         builder: (builder){
           return AlertDialog(
-            title: const Text('Choose Your Language'),
+            title:  Text(Constants.chooseYourLanguage.tr),
             content: SizedBox(
               width: double.maxFinite,
               child: ListView.separated(
@@ -51,17 +39,17 @@ class _LoginPageState extends State<LoginPage>
                   itemBuilder: (context,index){
                     return Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: GestureDetector(child: Text(locale[index]['name']),onTap: ()
+                      child: GestureDetector(child: Text(loginPageController.locale[index]['name']),onTap: ()
                       {
-                        print(locale[index]['name']);
-                        updateLanguage(locale[index]['locale']);
+                        print(loginPageController.locale[index]['name']);
+                        loginPageController.updateLanguage(loginPageController.locale[index]['locale']);
                       },),
                     );
                   }, separatorBuilder: (context,index){
-                return const Divider(
-                  color: Colors.blue,
+                return  Divider(
+                  color: ColorHelper.blueColor,
                 );
-              }, itemCount: locale.length
+              }, itemCount: loginPageController.locale.length
               ),
             ),
           );

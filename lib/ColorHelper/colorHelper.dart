@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class ColorHelper
@@ -13,9 +12,7 @@ class ColorHelper
   static Color greyColor =   Colors.grey;
   static Color redColor =   const Color.fromRGBO(173,86,83,1.0);
   static Color greenColor =   Colors.green;
-
-
-
+  static Color blueColor =   Colors.blue;
 
 
 

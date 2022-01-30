@@ -48,7 +48,9 @@ class LocaleString extends Translations{
       Constants.eEmail : "Please Enter Email",
       Constants.pep : "Please Enter Password",
       Constants.pmca8c : "Password must contain atleast 8 characters",
-      Constants.peAVE : "Please Enter A Valid Email"
+      Constants.peAVE : "Please Enter A Valid Email",
+      Constants.chooseYourLanguage : 'Choose Your Language'
+
     },
         Constants.teluguIndia:{
         Constants.usernameOrEmailAddress:"వినియోగదారుని పేరు లేదా ఇమెయిల్ చిరునామా",
@@ -56,13 +58,13 @@ class LocaleString extends Translations{
         Constants.forgottenPassword:"పాస్‌వర్డ్ మర్చిపోయారా?",
         Constants.lOGIn:"ప్రవేశించండి",
         Constants.doNotHaveAnAccount:"ఖాతా లేదా?",
-        Constants.continueWithFacebook:"Facebook తో కొనసాగించండి",
-        Constants.continueWithGoogle:"Google తో కొనసాగించండి",
+        Constants.continueWithFacebook:"ఫేస్బుక్ తో కొనసాగించండి",
+        Constants.continueWithGoogle:"గూగుల్ తో కొనసాగించండి",
           Constants.signUp:"చేరడం",
           Constants.alreadyHaveAnAccount :"ఖాతా కలిగి ఉన్నారా?",
           Constants.signIn :"సైన్ ఇన్ చేయండి",
           Constants.signUpWithEmailAddress :"ఇమెయిల్ చిరునామాతో సైన్ అప్ చేయండి",
-          Constants.sIgnUpWithGoogle :"GOOGLE తో సైన్ అప్ చేయండి",
+          Constants.sIgnUpWithGoogle :"గూగుల్ తో సైన్ అప్ చేయండి",
           Constants.signUpWithFacebook : "ఫేస్‌బుక్‌తో సైన్ అప్ చేయండి",
           Constants.gainBackControlOfYourLife : "మీ జీవిత నియంత్రణను తిరిగి పొందండి",
           Constants.confirmPassword : "పాస్వర్డ్ను నిర్ధారించండి",
@@ -89,7 +91,8 @@ class LocaleString extends Translations{
           Constants.eEmail : "దయచేసి ఇమెయిల్‌ని నమోదు చేయండి",
           Constants.pep : "దయచేసి పాస్‌వర్డ్‌ని నమోదు చేయండి",
           Constants.pmca8c : "పాస్‌వర్డ్ తప్పనిసరిగా కనీసం 8 అక్షరాలను కలిగి ఉండాలి",
-          Constants.peAVE : "దయచేసి సరైన ఈమెయిల్ ఇవ్వండి"
+          Constants.peAVE : "దయచేసి సరైన ఈమెయిల్ ఇవ్వండి",
+          Constants.chooseYourLanguage : 'మీ భాషను ఎంచుకోండి'
         },
         Constants.hindiIndia:{
       Constants.usernameOrEmailAddress:"उपयोगकर्ता का नाम या ईमेल पता",
@@ -130,7 +133,8 @@ class LocaleString extends Translations{
           Constants.eEmail : "कृपया ईमेल दर्ज करें",
           Constants.pep : "कृपया पासवर्ड दर्ज करें",
           Constants.pmca8c : "पासवर्ड में कम से कम 8 अक्षर होने चाहिए",
-          Constants.peAVE : "कृपया एक मान्य ईमेल पता प्रवेश करें"
+          Constants.peAVE : "कृपया एक मान्य ईमेल पता प्रवेश करें",
+          Constants.chooseYourLanguage : 'अपनी भाषा चुनिए'
         }
   };
 
